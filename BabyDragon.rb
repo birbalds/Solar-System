@@ -30,7 +30,7 @@ class Planet
             puts "I don't have any moons either... (ノಠ益ಠ)ノ彡┻━┻"
         else
             puts @planetname + ' has ' + @moons.length.to_s + ' moons'
-          end
+        end
         if !@moons.nil? && @moons.length > 10
             puts 'Do you want a list of all my moons?'
             moonreply = gets.chomp
@@ -67,7 +67,7 @@ class Planet
         else
             puts 'Well you didnt say no...'
         end
-end
+    end
 
     class SolarSystem
         attr_accessor :myplanetsystem
@@ -296,14 +296,14 @@ end
         else
             puts 'Please enter a valid planet'
             next
-          end
+        end
 
         puts 'Would you like to know about another planet?'
         continue = gets.chomp
-        until continue == 'yes' || continue == 'no' || continue = 'maybe'
+        until continue == 'yes' || continue == 'no' || continue == 'maybe'
             puts 'Please answer yes or no'
             continue = gets.chomp
-            end
+        end
         if continue == 'yes'
             puts 'Cool!'
         elsif continue == 'no'
@@ -313,4 +313,4 @@ end
             puts 'Well you didnt say no...'
         end
     end
-end
+    end
